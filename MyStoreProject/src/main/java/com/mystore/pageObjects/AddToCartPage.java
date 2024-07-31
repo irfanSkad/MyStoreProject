@@ -49,7 +49,7 @@ public class AddToCartPage extends BasClass {
 		s.selectByVisibleText("M");
 		
 		if(s.equals(s)|| s.equals(s1)) {
-		s.selectByVisibleText("L");
+		s.selectByVisibleText("K");
 		}
 		
 	}
