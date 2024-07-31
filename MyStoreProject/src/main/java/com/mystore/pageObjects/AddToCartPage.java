@@ -37,11 +37,21 @@ public class AddToCartPage extends BasClass {
 
 	public void enterQuantity() throws Throwable {
 		quantity.sendKeys("1");	
+		
 		}
 	
 	public void selectSize() throws Throwable {
+		
 		Select s = new Select(size);
+		s.selectByVisibleText("S");
+		
+		Select s1 = new Select(size);
+		s.selectByVisibleText("M");
+		
+		if(s.equals(s)|| s.equals(s1)) {
 		s.selectByVisibleText("L");
+		}
+		
 	}
 
 	

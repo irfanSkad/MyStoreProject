@@ -1,11 +1,15 @@
 package com.mystore.base;
 
+import java.io.File;
 import java.io.FileInputStream;
 
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -49,6 +53,14 @@ public class BasClass {
             driver.manage().window().maximize();
             driver.get(prop.getProperty("url"));
          }
+	     public String getScreenshot(String testName,WebDriver driver) throws IOException {
+		    	TakesScreenshot ts = (TakesScreenshot)driver;
+		    	File source = ts.getScreenshotAs(OutputType.FILE);
+		    	File file = new File(System.getProperty("user.dir")+"//reports//"+testName+".png");
+		    	FileUtils.copyFile(source, file);
+				return file.getAbsolutePath();
+		    	
+		    }
 }
 
 	

@@ -45,7 +45,7 @@ public class LoginPage extends BasClass {
 	}
 	
 	public AccountCreationPage createNewAccount() throws Throwable {
-		emailForNewAccount.sendKeys("abcdd3@gmail.com");
+		emailForNewAccount.sendKeys("abcdd6@gmail.com");
 		createNewAccountBtn.click();
 		return new AccountCreationPage();
 	}

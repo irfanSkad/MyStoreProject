@@ -48,7 +48,7 @@ public class OrderPageTest extends BasClass{
 	}
 	@Test(groups = "Regression")
 	public void verifyTotalPrice() throws Throwable {
-		
+	
 		addToCart.selectSize();
 		Thread.sleep(2000);
 		System.out.println("Size Selected Successfully");

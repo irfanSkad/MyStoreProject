@@ -4,14 +4,14 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="com.mystore.testcases.EndToEndTest">
+      <class name="com.mystore.testcases.OrderPageTest">
         <methods>
           <include name="loadConfig"/>
-          <include name="tearDown"/>
-          <include name="verifyTotalPrice"/>
           <include name="setup"/>
+          <include name="verifyTotalPrice"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.mystore.testcases.EndToEndTest -->
+      </class> <!-- com.mystore.testcases.OrderPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
