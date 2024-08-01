@@ -1,5 +1,7 @@
 package com.mystore.pageObjects;
 
+import java.util.Scanner;
+
 import org.openqa.selenium.WebElement;
 
 import org.openqa.selenium.support.FindBy;
@@ -45,7 +47,11 @@ public class LoginPage extends BasClass {
 	}
 	
 	public AccountCreationPage createNewAccount() throws Throwable {
-		emailForNewAccount.sendKeys("abcdd7@gmail.com");
+		System.out.println("Enter Email Address");
+		Scanner myObj = new Scanner(System.in); // Create a Scanner object
+	    String email; 
+	    email = myObj.nextLine();
+		emailForNewAccount.sendKeys(email);
 		createNewAccountBtn.click();
 		return new AccountCreationPage();
 	}
