@@ -32,7 +32,7 @@ public class OrderPageTest extends BasClass{
 	
 	@Parameters("browser")
 	@BeforeMethod(groups = {"Smoke","Sanity","Regression"})
-	public void setup(@Optional("http://www.automationpractice.pl/index.php")String browser) throws Throwable {
+	public void setup(String browser) throws Throwable {
 		launchApp(browser); 
 	
 		index= new Index();

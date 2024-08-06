@@ -17,7 +17,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
-import com.beust.jcommander.Parameter;
+
 
 public class BasClass {
 	public static WebDriver driver;
@@ -34,7 +34,7 @@ public class BasClass {
 		catch(Exception e){
 			e.printStackTrace();
 		}
-		//}
+		
 	}	
 	     @Parameters("browser")
          public static void launchApp(String browserName) {  

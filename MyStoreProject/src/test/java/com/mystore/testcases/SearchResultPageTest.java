@@ -19,7 +19,7 @@ public class SearchResultPageTest extends BasClass {
 	
 	@Parameters("browser")
 	@BeforeMethod(groups = {"Smoke","Sanity","Regression"})
-	public void setup(@Optional("http://www.automationpractice.pl/index.php")String browser) {
+	public void setup(String browser) {
 		launchApp(browser); 
 	}
 	

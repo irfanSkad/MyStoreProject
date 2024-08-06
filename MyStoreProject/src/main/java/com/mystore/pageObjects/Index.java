@@ -1,6 +1,7 @@
 package com.mystore.pageObjects;
 
 import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -43,12 +44,10 @@ public class Index extends BasClass {
 		return new SearchResultPage();
 		
 	}
-
-
+	
 	public LoginPage clickOnSignIn() throws Throwable {
 		signInBtn.click();
 		return new LoginPage();
 	}
-	
 
 }

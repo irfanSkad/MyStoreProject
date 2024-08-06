@@ -8,7 +8,7 @@
 	  <parameter name="browser" value="Chrome"></parameter>
     <classes>
   	  <class name="com.mystore.testcases.IndexPageText"/>
-      <class name="com.mystore.testcases.LoginPageTest"/>
+   <class name="com.mystore.testcases.LoginPageTest"/>
       <class name="com.mystore.testcases.HomePageTest"/>
       <class name="com.mystore.testcases.AccountCreationTest"/>
       <class name="com.mystore.testcases.SearchResultPageTest"/>
